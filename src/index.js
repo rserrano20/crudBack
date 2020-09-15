@@ -3,6 +3,7 @@ import express from 'express';
 import morgan from 'morgan'; // const morgan = require("morgan");
 import cors from 'cors'; // const cors = require('cors');
 import path from 'path'; //const path = require('path');
+import productoRoutes from './routes/producto.routes';
 
 //settings
 import './database';
@@ -25,6 +26,4 @@ app.use(express.static(path.join(__dirname,'../public'))); //pone la carpeta pub
 
 
 //crear una ruta
-app.get('/', (req, res) =>{
-    res.send("hola comision 7d")
-})
+app.use('/api/cafeteria', productoRoutes)
