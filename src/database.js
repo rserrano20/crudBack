@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'; //const mongoose = require('mongoose');
 
-const url = "mongodb://localhost:27017/cafeteriav1"; //cadena de conexion
+const url = "mongodb+srv://roserranoar:LTERZnhMCihksS1G@cluster0.xwpip.mongodb.net/test"; //cadena de conexion
 
 mongoose.connect(url, {
     useNewUrlParser:true,
